@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- Library Bootstrap -->
+    <link href="library/bootstrap/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+     <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="image/logo.svg" alt="AgriSwa" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tentang Kami</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Solusi</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edukasi</a></li>
+                            <li><a class="dropdown-item" href="#">IoT</a></li>
+                            <li><a class="dropdown-item" href="#">Market</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item">
+                    <a class="nav-link btn btn-secondary my-2 my-lg-0" href="#">Masuk</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link btn btn-primary my-2 my-lg-0" href="#">Daftar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div id="carouselExampleIndicators" class="carousel slide position-relative" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/home_banner1.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/home_banner2.png" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/home_banner3.png" alt="">
+                </div>
+            </div>
+            <!-- Next & Prev -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <h1 class="text">
+                Berkembang bersama
+                <br>
+                membangun swasembada
+                <br>
+                pangan Indonesia
+            </h1>
+        </div>
+        <div class="card">
+            <h2 class="title text-center">
+                Jumlah Mitra Kami
+            </h2>
+            <div class="item row d-flex">
+                <div class="item-desk">
+                    <h3>
+                        +142
+                    </h3>
+                    <p>
+                        Pertanian
+                    </p>
+                </div>
+                <div class="item-desk">
+                    <h3>
+                        +142
+                    </h3>
+                    <p>
+                        Pertanian
+                    </p>
+                </div>
+                <div class="item-desk">
+                    <h3>
+                        +142
+                    </h3>
+                    <p>
+                        Pertanian
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Description -->
+    <sction class="desc d-flex">
+        <div class="container">
+            <div class="card d-flex row">
+                <img src="" alt="" class="img-card col-md-5 col-lg-6">
+                <div class="text-right col-md-6 col-lg-5">
+                    <h2>
+                        Kami Ingin Memecahkan masalah <br>Pangan di Indonesia
+                    </h2>
+                    <p>
+                        Swasembada pangan menjadi program pembangunan pertanian yang strategis karena memiliki dampak luas. Ketersediaan pangan dalam  jumlah yang cukup, mutu bahan pangan yang baik, serta nilai gizi yang tinggi memiliki dampak luas pada perekonomian dan mutu sumber daya manusia.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </sction>
+
+   
+    <!-- Library -->
+    <script src="library/jquery/jquery-3.6.1.slim.js"></script>
+    <script src="library/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- alternate js -->
+    <!-- <script src="library/popper/popper.min.js"></script>
+    <script src="library/bootstrap/bootstrap.min.js"></script> -->
+
+    <script>
+        // Navbar Scroll Fix
+        window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+        } else {
+            navbar.classList.remove("sticky");
+        };
+        };
+
+        // Carousel
+        const myCarouselElement = document.querySelector('#myCarousel');
+        const carousel = new bootstrap.Carousel(myCarouselElement, {
+            interval: 2000,
+        });
+    </script>
+  </body>
+</html>
