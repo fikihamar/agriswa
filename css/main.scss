@@ -1,35 +1,138 @@
+// Color Variable
+$primary: #0D7A5B;
+$primary1: #3AAF83;
+$primary2: #62D7A0;
+$subprimary: #0BCDA8;
+$subprimary1: #41E1B3;
+$subprimary2: #67F0BC;
+$secondary: #FFD200;
+$secondary1: #FFE03F;
+$secondary2: #FFE967;
+$black: #26474C;
+$black1: #284D52;
+$black2: #627C7F;
+$white: #F6F6F6;
+$white1: #FFFF;
+
+// Fix Overlay
+body{
+    overflow-x: hidden;
+    color: $black;
+}
+// Font
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    letter-spacing: 0.3px;
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.3px;
+}
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+}
+h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    b{
+       font-weight: 400; 
+    } 
+    &.p1{
+        font-size: 16px;
+        letter-spacing: 0.2px;
+        b{
+            font-weight: 400;
+        }
+    }
+    &.p2{
+        font-size: 12px;
+        letter-spacing: 0.2px;
+        b{
+            font-weight: 400;
+        }
+    }
+}
+.sh1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.3px;
+}
+.sh2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+}
+a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    .active{
+        font-weight: 500;
+    }
+    text-decoration: none;
+}
+
+
+// Button
 .btn{
     border-radius: 20px;
     padding: 10px 20px !important;
 }
 .btn-primary{
-    background-color: #038767 !important;
+    background-color: $primary !important;
     border: none !important;
     &:hover{
-        background-color: #003d2e !important;
-        color: #bcc9c6 !important;
+        background-color: $primary1 !important;
+        color: $white !important;
+        font-weight: 500;
     }
 }
 .btn-secondary{
-    background-color: rgba($color: #038767, $alpha: 0) !important;
-    border: 1px solid #038767 !important;
+    background-color: rgba($color: $primary, $alpha: 0.25) !important;
+    border: 1px solid $primary !important;
     &:hover{
-        background-color: #003d2e !important;
+        background-color: $subprimary !important;
         border:none !important;
-        color: #bcc9c6 !important;
+        color: $black !important;
+        font-weight: 500;
     }
 }
+
 // Navbar
 .navbar{
     z-index: 7;
-    background-color: #0BCDA8;
+    background-color: $primary1;
     position: fixed;
     width: 100%;
     top: 0;
     @media screen and (min-width: 1024px) {
         margin-top: 30px;
         padding: 10px 70px;
-        background-color: rgba($color: #0bcda8, $alpha: 0);
+        background-color: rgba($color: $primary1, $alpha: 0);
     }
     padding: 10px 10px;
     .container-fluid{
@@ -42,33 +145,38 @@
             }
         }
         a{
-            color: #FFFF;
+            color: $white;
             &:hover{
-                color: #038767;
+                color: $primary;
             }
             &.active{
                 font-weight: bold;
-                color: #cdfff3;
+                color: $white1;
             }
         }
         .btn{
             margin: 0px 15px;
         }
         .dropdown-menu{
-            background-color: #038767;
+            background-color: $primary1;
+            border: none;
+            a{
+                &:hover{
+                    color: $black;
+                    background-color: $subprimary2;
+                }
+            }
         }
     }
     &.sticky{
-        background-color: #0BCDA8;
+        background-color: $primary1;
         position: fixed;
         top: 0;
         margin-top: 0px;
         width: 100%;
     }
 }
-// .sticky + .hero{
-//     padding-top: 70px;
-// }
+
 // Hero Section
 .hero{
     z-index: 6;
@@ -80,7 +188,7 @@
     }
     margin-top: 65px;
     .text{
-        color: #FFFF;
+        color: $white;
         position: absolute;
         @media screen and (min-width:480px) {
             top: 30%;
@@ -96,16 +204,17 @@
         img{
             width: 100%;
             height: 50vh;
+            background-size: cover;
             @media screen and (min-width:1024px) {
                 height: 80vh;
             }
         }
     }
     .card{
-        background-color: #0BCDA8;
+        background-color: $primary;
         width: fit-content;
-        padding: 10px 20px;
-        color: #FFFF;
+        padding: 25px 10px;
+        color: $white1;
         border: none;
         border-radius: 20px;
         margin: 20px auto;
@@ -113,27 +222,30 @@
             position: absolute;
             bottom: 10;
             margin-top: -85px;
-            left: 10px;   
+            left: 10px; 
+            padding: 25px 20px;  
         }
         @media screen and (min-width:1024px) {
             left: 70px;
         }
         .item{
-            gap: 20px;
             @media screen and (min-width:1024px) {
                 gap: 50px;
             }
             h3{
-                color: #dacd22;
+                color: $secondary;
+                margin: 0px;
+            }
+            p{
+                margin: 0px;
             }
             .item-desk{
                 width: fit-content;
             }
         }
     }
-    
-
 }
+
 // Decription
 .desc{
     // offset card hero section 50px
@@ -151,18 +263,149 @@
             background-position: center;
             background-size: cover;
         }
-        h2{
-            color: #038767;
+        h3{
+            color: $primary1;
         }
-        @media screen and (max-width: 479px) {
-            margin-bottom: 40px;
+        @media screen and (max-width: 719px) {
+            margin-bottom: 20px;
             p{
                 text-align: justify;
             }
-            h2{
-                margin-top: 10px;
-                margin-bottom: 5px;
-            }
+        }
     }
+}
+
+// Banner Layanan
+.banner-layanan{
+    padding: 60px 0px;
+    text-align: center;
+    background-image: url('../image/home_banner-layanan.jpg');
+    background-size: cover;
+    color: $white;
+    margin-bottom: 90px;
+    .light{
+        font-weight: 500;
+    }
+}
+
+// Layanan
+.layanan{
+    h2{
+        margin-bottom: 80px;
+        color: $primary1;
+    }
+    .card{
+        padding: 40px 20px;
+        border: none;
+        box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        margin: 20px;
+        width: fit-content;
+        @media screen and (min-width: 720px) {
+            margin-bottom: 10px;
+            width: 300px;
+            height: 535px;
+        }
+        .card-img{
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            height: 232px;
+            img{
+                width: 264px;
+            }
+        }
+        h3{
+            margin-bottom: 5px;
+            color: $black;
+            text-decoration: none;
+        }
+        p{
+            color: $black;
+            text-decoration: none;
+        }
+        &:hover{
+            background-color: $primary;
+            .card-img{
+                background-color: $primary2;
+            }
+            h3{
+                color: $white1;
+            }
+            p{
+                color: $white1;
+            }
+        }
+    }
+}
+
+// Testimoni
+.testimoni{
+    margin-top: 50px;
+    h2{
+        color: $primary1;
+        margin-bottom: 20px;
+    }
+    .card{
+        padding: 40px 20px;
+        border: none;
+        box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        margin: 20px;
+        width: fit-content;
+        @media screen and (min-width: 720px) {
+            width: 30vw;
+            height: 400px;
+        }
+        img{
+            width: 84px;
+            height: 84px;
+            border-radius: 100%;
+            margin:auto;
+        }
+        p{
+            margin: 10px;
+            overflow-y: hidden;
+        }
+        &:hover{
+            background-color: $primary;
+            color: $white1;
+        }
+    }
+}
+
+// Footer
+.footer{
+    margin-top: 160px;
+    .company{
+        padding: 60px 0px 40px;
+        background-color: $black1;
+        color: $white;
+        img{
+            margin-bottom: 20px;
+        }
+        p{
+            a{
+                color: $black2;
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+        a{
+            color: $white;
+            &:hover{
+                color: $subprimary2;
+            }
+        }
+    }
+    .copyright{
+        padding: 20px 0px;
+        background-color: $black;
+        color: $white;
+        h5{
+            margin: 0px;
+        }
     }
 }
