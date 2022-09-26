@@ -1,0 +1,44 @@
+.navbar2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    // @media screen and (min-width: 1024px) {
+    //     margin-top: 30px;
+    //     padding: 10px 70px;
+    //     background-color: rgba($color: $primary1, $alpha: 0);
+    // }
+    .container-fluid{
+        padding: 0px;
+        .navbar-brand{
+            padding: 4.5px;
+            margin: 0px;
+            img{
+                height: 40px;
+            }
+        }
+        a{
+            color: $black;
+            &:hover{
+                color: $primary;
+            }
+            &.active{
+                font-weight: bold;
+                color: $black;
+            }
+        }
+        .btn{
+            margin: 0px 15px;
+        }
+        .dropdown-menu{
+            background-color: $primary1;
+            border: none;
+            a{
+                &:hover{
+                    color: $black;
+                    background-color: $subprimary2;
+                }
+            }
+        }
+    }
+}

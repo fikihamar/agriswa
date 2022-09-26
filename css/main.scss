@@ -1,18 +1,21 @@
 // Color Variable
-$primary: #0D7A5B;
-$primary1: #3AAF83;
-$primary2: #62D7A0;
-$subprimary: #0BCDA8;
-$subprimary1: #41E1B3;
-$subprimary2: #67F0BC;
-$secondary: #FFD200;
-$secondary1: #FFE03F;
-$secondary2: #FFE967;
-$black: #26474C;
-$black1: #284D52;
-$black2: #627C7F;
-$white: #F6F6F6;
-$white1: #FFFF;
+// $primary: #0D7A5B;
+// $primary1: #3AAF83;
+// $primary2: #62D7A0;
+// $subprimary: #0BCDA8;
+// $subprimary1: #41E1B3;
+// $subprimary2: #67F0BC;
+// $secondary: #FFD200;
+// $secondary1: #FFE03F;
+// $secondary2: #FFE967;
+// $black: #26474C;
+// $black1: #284D52;
+// $black2: #627C7F;
+// $white: #F6F6F6;
+// $white1: #FFFF;
+
+@import './scss//variable';
+@import './scss/service-iot';
 
 // Fix Overlay
 body{

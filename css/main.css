@@ -1,88 +1,147 @@
+.navbar2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 10px;
+}
+
+.navbar2 .container-fluid {
+  padding: 0px;
+}
+
+.navbar2 .container-fluid .navbar-brand {
+  padding: 4.5px;
+  margin: 0px;
+}
+
+.navbar2 .container-fluid .navbar-brand img {
+  height: 40px;
+}
+
+.navbar2 .container-fluid a {
+  color: #26474C;
+}
+
+.navbar2 .container-fluid a:hover {
+  color: #0D7A5B;
+}
+
+.navbar2 .container-fluid a.active {
+  font-weight: bold;
+  color: #26474C;
+}
+
+.navbar2 .container-fluid .btn {
+  margin: 0px 15px;
+}
+
+.navbar2 .container-fluid .dropdown-menu {
+  background-color: #3AAF83;
+  border: none;
+}
+
+.navbar2 .container-fluid .dropdown-menu a:hover {
+  color: #26474C;
+  background-color: #67F0BC;
+}
+
 body {
   overflow-x: hidden;
   color: #26474C;
 }
 
 h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 800;
   font-size: 40px;
   letter-spacing: 0.5px;
 }
 
 h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 32px;
   letter-spacing: 0.3px;
 }
 
 h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 24px;
   letter-spacing: 0.3px;
 }
 
 h4 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 0.2px;
 }
 
 h5 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 0.2px;
 }
 
 p {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 20px;
   letter-spacing: 0.3px;
 }
+
 p b {
   font-weight: 400;
 }
+
 p.p1 {
   font-size: 16px;
   letter-spacing: 0.2px;
 }
+
 p.p1 b {
   font-weight: 400;
 }
+
 p.p2 {
   font-size: 12px;
   letter-spacing: 0.2px;
 }
+
 p.p2 b {
   font-weight: 400;
 }
 
 .sh1 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 24px;
   letter-spacing: 0.3px;
 }
 
 .sh2 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.2px;
 }
 
 a {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.2px;
   text-decoration: none;
 }
+
 a .active {
   font-weight: 500;
 }
@@ -96,6 +155,7 @@ a .active {
   background-color: #0D7A5B !important;
   border: none !important;
 }
+
 .btn-primary:hover {
   background-color: #3AAF83 !important;
   color: #F6F6F6 !important;
@@ -106,6 +166,7 @@ a .active {
   background-color: rgba(13, 122, 91, 0.25) !important;
   border: 1px solid #0D7A5B !important;
 }
+
 .btn-secondary:hover {
   background-color: #0BCDA8 !important;
   border: none !important;
@@ -121,6 +182,7 @@ a .active {
   top: 0;
   padding: 10px 10px;
 }
+
 @media screen and (min-width: 1024px) {
   .navbar {
     margin-top: 30px;
@@ -128,29 +190,47 @@ a .active {
     background-color: rgba(58, 175, 131, 0);
   }
 }
+
 .navbar .container-fluid {
   padding: 0px;
 }
+
 .navbar .container-fluid .navbar-brand {
   padding: 4.5px;
   margin: 0px;
 }
+
 .navbar .container-fluid .navbar-brand img {
   height: 40px;
 }
+
 .navbar .container-fluid a {
   color: #F6F6F6;
 }
+
 .navbar .container-fluid a:hover {
   color: #0D7A5B;
 }
+
 .navbar .container-fluid a.active {
   font-weight: bold;
-  color: white;
+  color: #FFFF;
 }
+
 .navbar .container-fluid .btn {
   margin: 0px 15px;
 }
+
+.navbar .container-fluid .dropdown-menu {
+  background-color: #3AAF83;
+  border: none;
+}
+
+.navbar .container-fluid .dropdown-menu a:hover {
+  color: #26474C;
+  background-color: #67F0BC;
+}
+
 .navbar.sticky {
   background-color: #3AAF83;
   position: fixed;
@@ -165,49 +245,61 @@ a .active {
   position: relative;
   margin-top: 65px;
 }
+
 @media screen and (min-width: 1024px) {
   .hero {
     margin-top: -100px;
     height: 80vh;
   }
 }
+
 .hero .text {
   color: #F6F6F6;
   position: absolute;
 }
+
 @media screen and (min-width: 480px) {
   .hero .text {
     top: 30%;
     margin-left: 10px;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .hero .text {
     top: 40%;
     margin-left: 70px;
   }
 }
-.hero img {
+
+.hero .carousel-item {
+  border: none;
+}
+
+.hero .carousel-item img {
   width: 100%;
   height: 50vh;
   background-size: cover;
 }
+
 @media screen and (min-width: 1024px) {
   .hero img {
     height: 80vh;
   }
 }
+
 .hero .card {
   background-color: #0D7A5B;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 25px 10px;
-  color: white;
+  color: #FFFF;
   border: none;
   border-radius: 20px;
   margin: 20px auto;
 }
+
 @media screen and (min-width: 480px) {
   .hero .card {
     position: absolute;
@@ -217,23 +309,28 @@ a .active {
     padding: 25px 20px;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .hero .card {
     left: 70px;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .hero .card .item {
     gap: 50px;
   }
 }
+
 .hero .card .item h3 {
   color: #FFD200;
   margin: 0px;
 }
+
 .hero .card .item p {
   margin: 0px;
 }
+
 .hero .card .item .item-desk {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -243,23 +340,24 @@ a .active {
 .desc {
   margin-top: 100px;
 }
+
 @media screen and (max-width: 479px) {
   .desc {
     margin-top: 200px;
   }
 }
+
 .desc .card-item {
   margin-bottom: 80px;
 }
+
 .desc .card-item img {
   border-radius: 20px;
   background-position: center;
   background-size: cover;
 }
+
 .desc .card-item h3 {
-  color: #3AAF83;
-}
-.desc .card-item h1 {
   color: #3AAF83;
 }
 @media screen and (max-width: 719px) {
@@ -279,6 +377,7 @@ a .active {
   color: #F6F6F6;
   margin-bottom: 90px;
 }
+
 .banner-layanan .light {
   font-weight: 500;
 }
@@ -287,16 +386,19 @@ a .active {
   margin-bottom: 80px;
   color: #3AAF83;
 }
+
 .layanan .card {
   padding: 40px 20px;
   border: none;
-  box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   margin: 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
+
 @media screen and (min-width: 720px) {
   .layanan .card {
     margin-bottom: 10px;
@@ -304,189 +406,129 @@ a .active {
     height: 535px;
   }
 }
+
 .layanan .card .card-img {
   padding: 10px;
   border-radius: 20px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
   height: 232px;
 }
+
 .layanan .card .card-img img {
   width: 230px;
 }
+
 .layanan .card h3 {
   margin-bottom: 5px;
   color: #26474C;
   text-decoration: none;
 }
+
 .layanan .card p {
   color: #26474C;
   text-decoration: none;
 }
+
 .layanan .card:hover {
   background-color: #0D7A5B;
 }
+
 .layanan .card:hover .card-img {
   background-color: #62D7A0;
 }
+
 .layanan .card:hover h3 {
-  color: white;
+  color: #FFFF;
 }
+
 .layanan .card:hover p {
-  color: white;
+  color: #FFFF;
 }
 
 .testimoni {
   margin-top: 50px;
 }
+
 .testimoni h2 {
   color: #3AAF83;
   margin-bottom: 20px;
 }
+
 .testimoni .card {
   padding: 40px 20px;
   border: none;
-  box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   margin: 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
+
 @media screen and (min-width: 720px) {
   .testimoni .card {
     width: 30vw;
     height: 400px;
   }
 }
+
 .testimoni .card img {
   width: 100px;
   height: 100px;
   border-radius: 100%;
   margin: auto;
 }
+
 .testimoni .card p {
   margin: 10px;
   overflow-y: hidden;
 }
+
 .testimoni .card:hover {
   background-color: #0D7A5B;
-  color: white;
+  color: #FFFF;
 }
 
 .footer {
   margin-top: 160px;
 }
+
 .footer .company {
   padding: 60px 0px 40px;
   background-color: #284D52;
   color: #F6F6F6;
 }
+
 .footer .company img {
   margin-bottom: 20px;
 }
+
 .footer .company p a {
   color: #627C7F;
 }
+
 .footer .company p a:hover {
   color: #0D7A5B;
 }
+
 .footer .company a {
   color: #F6F6F6;
 }
-.footer .company a.dis {
-  color: #627C7F;
-}
+
 .footer .company a:hover {
   color: #67F0BC;
 }
-.footer .company a:hover.dis {
-  color: #627C7F;
-}
+
 .footer .copyright {
   padding: 20px 0px;
   background-color: #26474C;
   color: #F6F6F6;
 }
+
 .footer .copyright h5 {
   margin: 0px;
 }
-
-.tim {
-  background-color: #3AAF83;
-  padding: 40px 0px;
-  margin-bottom: 60px;
-}
-.tim h2 {
-  margin-bottom: 20px;
-  color: #F6F6F6;
-}
-.tim .card {
-  border: none;
-  width: 220px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 20px 0px;
-  background-color: rgba(0, 0, 0, 0);
-}
-.tim .card img {
-  width: 120px;
-  height: 120px;
-  border-radius: 100%;
-  margin: auto;
-  margin-bottom: 20px;
-}
-.tim .card h5 {
-  color: #F6F6F6;
-  text-decoration: none;
-  margin: 0px;
-}
-.tim .card p {
-  color: #F6F6F6;
-  text-decoration: none;
-}
-.tim .card:hover h5 {
-  text-decoration: underline;
-}
-
-.value h2 {
-  margin-bottom: 20px;
-  color: #3AAF83;
-}
-@media screen and (min-width: 720px) {
-  .value h2 {
-    margin-bottom: 80px;
-  }
-}
-.value .card {
-  padding: 40px 20px;
-  border: none;
-  box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.25);
-  width: 350px;
-  height: 250px;
-  border-radius: 15px;
-  margin: 20px 0px;
-}
-.value .card h3 {
-  margin-bottom: 5px;
-  color: #0D7A5B;
-  text-decoration: none;
-}
-.value .card p {
-  color: #26474C;
-  text-decoration: none;
-}
-.value .card:hover {
-  background-color: #0D7A5B;
-}
-.value .card:hover .card-img {
-  background-color: #62D7A0;
-}
-.value .card:hover h3 {
-  color: white;
-  text-decoration: underline;
-}
-.value .card:hover p {
-  color: white;
-}/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.css.map */
