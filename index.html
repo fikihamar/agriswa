@@ -25,18 +25,13 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Beranda</a>
+                        <a class="nav-link active" href="index.html">Beranda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tentang Kami</a>
+                        <a class="nav-link" href="tentangkami.html">Tentang Kami</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Solusi</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Edukasi</a></li>
-                            <li><a class="dropdown-item" href="#">IoT</a></li>
-                            <li><a class="dropdown-item" href="#">Market</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Layanan IoT</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav justify-content-end">
@@ -47,6 +42,7 @@
             </div>
         </div>
     </nav>
+
     <!-- Hero Section -->
     <section class="hero">
         <div id="carouselExampleIndicators" class="carousel slide position-relative" data-bs-ride="true">
@@ -114,13 +110,13 @@
     </section>
     
     <!-- Description -->
-    <sction class="desc d-flex">
+    <sction id="desc" class="desc d-flex">
         <div class="container">
             <div class="card-item row d-flex align-items-center">
-                <div class="col-lg-4 col-md-6 col-12 offset-lg-2 text-center ">
+                <div class="col-lg-6 col-md-6 col-12  text-center ">
                     <img src="image/home_subhead1.jpg" alt="" class="w-100 h-auto mb-3 mb-md-0">
                 </div>
-                <div class="col-md-6 col-lg-4 text-start text-md-end">
+                <div class="col-md-6 col-lg-6 text-start text-md-end">
                     <h3>
                         Kami Ingin Memecahkan Masalah Pangan di Indonesia
                     </h3>
@@ -130,11 +126,10 @@
                 </div>
             </div>
             <div class="card-item row d-flex align-items-center flex-row-reverse">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-4 col-md-6 col-12 text-center">
+                <div class="col-lg-6 col-md-6 col-12 text-center">
                     <img src="image/home_subhead2.jpg" alt="" class="w-100 h-auto mb-3 mb-md-0">
                 </div>
-                <div class="col-md-6 col-lg-4 text-start text-md-start">
+                <div class="col-md-6 col-lg-6 text-start text-md-start">
                     <h3>
                         Membangun Digitalisasi Pertanian Indonesia
                     </h3>
@@ -144,10 +139,10 @@
                 </div>
             </div>
             <div class="card-item row d-flex align-items-center">
-                <div class="col-lg-4 col-md-6 col-12 offset-lg-2 text-center">
+                <div class="col-lg-6 col-md-6 col-12  text-center">
                     <img src="image/home_subhead3.jpg" alt="" class="w-100 h-auto mb-3 mb-md-0">
                 </div>
-                <div class="col-md-6 col-lg-4 text-start text-md-end">
+                <div class="col-md-6 col-lg-6 text-start text-md-end">
                     <h3>
                         Pertanian Cerdas & Pemantauan Budidaya Ternak Secara Real-time
                     </h3>
@@ -160,7 +155,7 @@
     </sction>
 
     <!-- Banner Layanan -->
-    <section class="banner-layanan">
+    <section id="layanan" class="banner-layanan">
         <h2>Mari Berkembang Bersama Kami</h2>
         <h2 class="light">Wujudkan Swasembada Pangan Indonesia</h2>
     </section>
@@ -186,7 +181,7 @@
                 </a>
                 <a href="#" class="card text-center">
                     <div class="card-img">
-                        <img src="image/home_layanan1.png" alt="">
+                        <img src="image/home_layanan3.png" alt="">
                     </div>
                     <h3>Kegiatan</h3>
                     <p>Distribusikan hasil pertanian, peternakan, dan perikanan Anda secara langsung.</p>
@@ -196,21 +191,21 @@
     </section>
 
     <!-- Testimoni -->
-    <section class="testimoni text-center">
+    <section id="testimoni" class="testimoni text-center">
         <h2>Apa Kata Mereka ?</h2>
         <div class="row d-flex align-items-center justify-content-around">
             <div class="card col-md-4 d-flex text-center">
-                <img src="https://ui-avatars.com/api/?name=Olivia" alt="">
+                <img src="image/profile_test1.jpg" alt="">
                 <p class="p1"><b>AgriSwa</b> membuat hidup saya jauh lebih mudah. mengawasi peternakan dan ternak saya dulunya merupakan mimpi buruk logistik, terutama di musim panen. Dengan ini, semua ternak saya dihitung secara real-time tanpa takut serta pemantauan pertanian berkat aplikasi yang disediakan tidak pernah semudah ini sebelumnya.</p>
                 <div class="sh2">- Olivia</div>
             </div>
             <div class="card col-md-4 d-flex text-center">
-                <img src="https://ui-avatars.com/api/?name=Irfan" alt="">
+                <img src="image/profile_test2.jpg" alt="">
                 <p class="p1">Sekarang saya dapat dengan mudah mengurusi transportasi produk saya dari peternakan saya ke toko-toko dengan sistem pemantauan</p>
                 <div class="sh2">- Pak Irfan</div>
             </div>
             <div class="card col-md-4 d-flex text-center">
-                <img src="https://ui-avatars.com/api/?name=Bayu" alt="">
+                <img src="image/profile_test3.jpg" alt="">
                 <p class="p1">Saya menikmati manfaat besar sekarang karena saya telah mengintegrasikan IoT di peternakan saya. Saya tidak meluangkan waktu ekstra untuk memantaunya</p>
                 <div class="sh2">- Pak Bayu</div>
             </div>
@@ -220,7 +215,6 @@
     <!-- Footer -->
     <section class="footer">
         <div class="company">
-
             <div class="container">
                 <div class="row d-flex justify-content-between">
                     <div class="col-12 mb-3 mb-md-0 col-lg-3">
@@ -228,38 +222,36 @@
                         <h5 class="sh2">Berkembang bersama  membangun swasembada pangan Indonesia.</h5>
                     </div>
                     <div class="col-6 col-md-auto">
-                        <p><a href="#"><b>Beranda</b></a></p>
+                        <p><a href="index.html"><b>Beranda</b></a></p>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="p1">Bergabung</a></li>
-                            <li><a href="#" class="p1">Deskripsi</a></li>
-                            <li><a href="#" class="p1">Layanan Kami</a></li>
-                            <li><a href="#" class="p1">Kata Mereka</a></li>
+                            <li><a href="index.html#" class="p1">Bergabung</a></li>
+                            <li><a href="index.html##desc" class="p1">Deskripsi</a></li>
+                            <li><a href="index.html#layanan" class="p1">Layanan Kami</a></li>
+                            <li><a href="index.html#testimoni" class="p1">Kata Mereka</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md-auto">
-                        <p><a href="#"><b>Tentang Kami</b></a></p>
+                        <p><a href="tentangkami.html"><b>Tentang Kami</b></a></p>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="p1">Visi Misi</a></li>
-                            <li><a href="#" class="p1">Tim Kami</a></li>
-                            <li><a href="#" class="p1">Nilai Perusahaan</a></li>
-                            <li><a href="#" class="p1">Persebarang Mitra</a></li>
+                            <li><a href="tentangkami.html#visimisi" class="p1">Visi Misi</a></li>
+                            <li><a href="tentangkami.html#tim" class="p1">Tim Kami</a></li>
+                            <li><a href="tentangkami.html#value" class="p1">Nilai Perusahaan</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md-auto">
                         <p><a href="#"><b>Solusi</b></a></p>
                         <ul class="list-unstyled">
                             <li><a href="#" class="p1">Layanan IoT</a></li>
-                            <li><a href="#" class="p1">Kegiatan</a></li>
-                            <li><a href="#" class="p1">Edukasi</a></li>
+                            <li><a href="#" class="p1 dis">Kegiatan</a></li>
+                            <li><a href="#" class="p1 dis">Edukasi</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md-auto">
                         <p><a href="#"><b>Sosial Media</b></a></p>
                         <ul class="list-unstyled">
-                            <li><a href="#" class="p1">Twitter</a></li>
-                            <li><a href="#" class="p1">LinkendIn</a></li>
-                            <li><a href="#" class="p1">Facebook</a></li>
-                            <li><a href="#" class="p1">Instagram</a></li>
+                            <li><a href="https://twitter.com/vokasiipb" class="p1">Twitter</a></li>
+                            <li><a href="https://www.facebook.com/vokasiipb/" class="p1">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/sekolahvokasiipb" class="p1">Instagram</a></li>
                         </ul>
                     </div>
                 </div>
