@@ -14,6 +14,9 @@ $black2: #627C7F;
 $white: #F6F6F6;
 $white1: #FFFF;
 
+*{
+    font-family: 'Poppins', sans-serif;
+}
 // Fix Overlay
 body{
     overflow-x: hidden;
@@ -105,6 +108,16 @@ a{
 .btn-primary{
     background-color: $primary !important;
     border: none !important;
+    &:hover{
+        background-color: $primary1 !important;
+        color: $white !important;
+        font-weight: 500;
+    }
+}
+.btn-primary-variant{
+    background-color: $primary !important;
+    border: none !important;
+    color: $white;
     &:hover{
         background-color: $primary1 !important;
         color: $white !important;
