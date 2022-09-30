@@ -14,6 +14,9 @@ $black2: #627C7F;
 $white: #F6F6F6;
 $white1: #FFFF;
 
+*{
+    font-family: 'Poppins', sans-serif;
+}
 // Fix Overlay
 body{
     overflow-x: hidden;
@@ -111,6 +114,16 @@ a{
         font-weight: 500;
     }
 }
+.btn-primary-variant{
+    background-color: $primary !important;
+    border: none !important;
+    color: $white;
+    &:hover{
+        background-color: $primary1 !important;
+        color: $white !important;
+        font-weight: 500;
+    }
+}
 .btn-secondary{
     background-color: rgba($color: $primary, $alpha: 0.25) !important;
     border: 1px solid $primary !important;
@@ -157,16 +170,6 @@ a{
         .btn{
             margin: 0px 15px;
         }
-        .dropdown-menu{
-            background-color: $primary1;
-            border: none;
-            a{
-                &:hover{
-                    color: $black;
-                    background-color: $subprimary2;
-                }
-            }
-        }
     }
     &.sticky{
         background-color: $primary1;
@@ -199,15 +202,12 @@ a{
             margin-left: 70px;
         }
     }
-    .carousel-item{
-        border: none;
-        img{
-            width: 100%;
-            height: 50vh;
-            background-size: cover;
-            @media screen and (min-width:1024px) {
-                height: 80vh;
-            }
+    img{
+        width: 100%;
+        height: 50vh;
+        background-size: cover;
+        @media screen and (min-width:1024px) {
+            height: 80vh;
         }
     }
     .card{
@@ -266,6 +266,9 @@ a{
         h3{
             color: $primary1;
         }
+        h1{
+            color: $primary1;
+        }
         @media screen and (max-width: 719px) {
             margin-bottom: 20px;
             p{
@@ -313,7 +316,7 @@ a{
             margin-bottom: 20px;
             height: 232px;
             img{
-                width: 264px;
+                width: 230px;
             }
         }
         h3{
@@ -359,8 +362,8 @@ a{
             height: 400px;
         }
         img{
-            width: 84px;
-            height: 84px;
+            width: 100px;
+            height: 100px;
             border-radius: 100%;
             margin:auto;
         }
@@ -395,7 +398,13 @@ a{
         }
         a{
             color: $white;
+            &.dis{
+                color: $black2;
+            }
             &:hover{
+                &.dis{
+                    color: $black2;
+                }
                 color: $subprimary2;
             }
         }
@@ -406,6 +415,87 @@ a{
         color: $white;
         h5{
             margin: 0px;
+        }
+    }
+}
+
+// Tim
+.tim{
+    background-color: $primary1;
+    padding: 40px 0px;
+    margin-bottom: 60px;
+    h2{
+        margin-bottom: 20px;
+        color: $white;
+    }
+    .card{
+        border: none;
+        width: 220px;
+        height: fit-content;
+        margin: 20px 0px;
+        background-color: rgba(0,0,0,0);
+        img{
+            width: 120px;
+            height: 120px;
+            border-radius: 100%;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        h5{
+            color: $white;
+            text-decoration: none;
+            margin: 0px;
+        }
+        p{
+            color: $white;
+            text-decoration: none;
+        }
+        &:hover{
+            h5{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+// value
+.value{
+    h2{
+        margin-bottom: 20px;
+        @media screen and (min-width: 720px) {
+            margin-bottom: 80px;
+        }
+        color: $primary1;
+    }
+    .card{
+        padding: 40px 20px;
+        border: none;
+        box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.25);
+        width: 350px;
+        height: 250px;
+        border-radius: 15px;
+        margin: 20px 0px;
+        h3{
+            margin-bottom: 5px;
+            color: $primary;
+            text-decoration: none;
+        }
+        p{
+            color: $black;
+            text-decoration: none;
+        }
+        &:hover{
+            background-color: $primary;
+            .card-img{
+                background-color: $primary2;
+            }
+            h3{
+                color: $white1;
+                text-decoration: underline;
+            }
+            p{
+                color: $white1;
+            }
         }
     }
 }
