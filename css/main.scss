@@ -13,9 +13,14 @@
 // $black2: #627C7F;
 // $white: #F6F6F6;
 // $white1: #FFFF;
+@import './scss//variable';
+@import './scss/service-iot';
 
-// @import './scss//variable';
-// @import './scss/service-iot';
+@import '../library/bootstrap/functions';
+@import '../library/bootstrap/mixins';
+@import '../library/bootstrap/variables';
+@import './scss//variable';
+@import './scss/service-iot';
 
 *{
     font-family: 'Poppins', sans-serif;

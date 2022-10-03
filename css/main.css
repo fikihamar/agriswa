@@ -1,3 +1,123 @@
+.navbar2 {
+  background-color: #FFFF;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+  padding: 10px 50px 10px 50px;
+  margin-bottom: 40px;
+  -webkit-filter: drop-shadow(0px 2px 25px rgba(191, 191, 191, 0.25));
+          filter: drop-shadow(0px 2px 25px rgba(191, 191, 191, 0.25));
+}
+
+.navbar2 .container-iot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body-iot {
+  margin: 0 90px 0 90px;
+}
+
+.body-iot h3 {
+  color: #3AAF83;
+}
+
+@media (max-width: 1199.98px) {
+  .body-iot {
+    margin-bottom: 0px !important;
+  }
+}
+
+.body-iot .card-product .card-product-img {
+  height: 300px;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.25);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 991.98px) {
+  .body-iot .card-product .card-product-img {
+    margin-bottom: 50px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .body-iot .card-product .card-product-img {
+    margin-right: 50px !important;
+  }
+}
+
+.body-iot .card-product .card-product-item {
+  height: 100%;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.25);
+}
+
+.navbar2 {
+  background-color: #FFFF;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+  padding: 10px 50px 10px 50px;
+  margin-bottom: 40px;
+  -webkit-filter: drop-shadow(0px 2px 25px rgba(191, 191, 191, 0.25));
+          filter: drop-shadow(0px 2px 25px rgba(191, 191, 191, 0.25));
+}
+
+.navbar2 .container-iot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body-iot {
+  margin: 0 90px 0 90px;
+}
+
+.body-iot h3 {
+  color: #3AAF83;
+}
+
+@media (max-width: 1199.98px) {
+  .body-iot {
+    margin-bottom: 0px !important;
+  }
+}
+
+.body-iot .card-product .card-product-img {
+  height: 300px;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.25);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 991.98px) {
+  .body-iot .card-product .card-product-img {
+    margin-bottom: 50px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .body-iot .card-product .card-product-img {
+    margin-right: 50px !important;
+  }
+}
+
+.body-iot .card-product .card-product-item {
+  height: 100%;
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.25);
+}
+
 * {
   font-family: 'Poppins', sans-serif;
 }
