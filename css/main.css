@@ -162,6 +162,18 @@ a .active {
   font-weight: 500;
 }
 
+.btn-primary-variant {
+  background-color: #0D7A5B !important;
+  border: none !important;
+  color: #F6F6F6;
+}
+
+.btn-primary-variant:hover {
+  background-color: #3AAF83 !important;
+  color: #F6F6F6 !important;
+  font-weight: 500;
+}
+
 .btn-secondary {
   background-color: rgba(13, 122, 91, 0.25) !important;
   border: 1px solid #0D7A5B !important;
@@ -360,6 +372,7 @@ a .active {
 .desc .card-item h3 {
   color: #3AAF83;
 }
+
 @media screen and (max-width: 719px) {
   .desc .card-item {
     margin-bottom: 20px;

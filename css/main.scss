@@ -17,6 +17,9 @@
 @import './scss//variable';
 @import './scss/service-iot';
 
+*{
+    font-family: 'Poppins', sans-serif;
+}
 // Fix Overlay
 body{
     overflow-x: hidden;
@@ -108,6 +111,16 @@ a{
 .btn-primary{
     background-color: $primary !important;
     border: none !important;
+    &:hover{
+        background-color: $primary1 !important;
+        color: $white !important;
+        font-weight: 500;
+    }
+}
+.btn-primary-variant{
+    background-color: $primary !important;
+    border: none !important;
+    color: $white;
     &:hover{
         background-color: $primary1 !important;
         color: $white !important;
