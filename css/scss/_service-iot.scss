@@ -1,44 +1,47 @@
+
+// Navbar
+
+@import '../../library/bootstrap/functions';
+@import '../../library/bootstrap/mixins';
+@import '../../library/bootstrap/variables';
+
 .navbar2{
+   background-color: $white1;
+   align-self: center;
+   width: 100%;
+   padding: 10px 50px 10px 50px;
+   margin-bottom: 40px;
+   filter: drop-shadow(0px 2px 25px rgba(191, 191, 191, 0.25));
+   .container-iot{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 10px;
-    // @media screen and (min-width: 1024px) {
-    //     margin-top: 30px;
-    //     padding: 10px 70px;
-    //     background-color: rgba($color: $primary1, $alpha: 0);
-    // }
-    .container-fluid{
-        padding: 0px;
-        .navbar-brand{
-            padding: 4.5px;
-            margin: 0px;
-            img{
-                height: 40px;
+   }
+}
+
+.body-iot{
+    margin: 0 90px 0 90px;
+    h3{
+        color: $primary1;
+    }
+    @include media-breakpoint-down(xl) {
+        margin-bottom: 0px !important;
+    }
+    .card-product{
+        .card-product-img{
+            height: 300px;
+            width: 100%;
+            box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.25);
+            object-fit: cover;
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 50px !important;
+            }
+            @include media-breakpoint-up(md) {
+                margin-right: 50px !important;
             }
         }
-        a{
-            color: $black;
-            &:hover{
-                color: $primary;
-            }
-            &.active{
-                font-weight: bold;
-                color: $black;
-            }
-        }
-        .btn{
-            margin: 0px 15px;
-        }
-        .dropdown-menu{
-            background-color: $primary1;
-            border: none;
-            a{
-                &:hover{
-                    color: $black;
-                    background-color: $subprimary2;
-                }
-            }
+        .card-product-item{
+            height: 100%;
+            width: 100%;
+        box-shadow: 0px 2px 18px rgba(0, 0, 0, 0.25);
         }
     }
 }
